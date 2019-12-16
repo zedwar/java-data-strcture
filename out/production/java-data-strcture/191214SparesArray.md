@@ -24,6 +24,7 @@
         Alt+Shift+F9，选择 Debug
         Alt+Shift+F10，选择 Run
         Ctrl+Shift+F9，编译
+    10.new 类后补全Ctrl＋Alt＋V
 ####print函数之间的区别
     System.out.print("用print输出i:"+ i);
     System.out.println( "用println输出i:"+ i);
