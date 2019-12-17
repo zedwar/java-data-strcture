@@ -1,11 +1,11 @@
-package src.dataStructures.queen;
+package src.dataStructures.queue;
 
 import java.util.Scanner;
 
 public class circleArray {
     public static void main(String[] args) {
         System.out.println("测试代码");
-        CircleArr Array = new CircleArr(3);
+        CircleArr Array = new CircleArr(4);
         char key = ' ';
         Scanner scanner = new Scanner(System.in);
         boolean loop = true;
@@ -30,7 +30,6 @@ public class circleArray {
                     try{
                         int res = Array.getQueue();
                         System.out.printf("取出的数据是%d\n",res);
-                        Array.move();
                     }catch (Exception e){
                         //TODO:handle exception
                         System.out.println(e.getMessage());
@@ -114,14 +113,4 @@ class CircleArr{
         }
         return arr[front];
     }
-    public void move() {
-        for (int i = front; i < front+arr.length - 1; i++) {
-            arr[i] = arr[i + 1];
-        }
-        arr[arr.length-1] = 0;
-        rear--;
-    }
-
-
-
 }
