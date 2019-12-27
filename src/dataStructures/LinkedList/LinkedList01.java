@@ -29,6 +29,10 @@ public class LinkedList01 {
         singleLinkedList.del(1);
         singleLinkedList.list();
 
+//————————————————
+//版权声明：本文为CSDN博主「lk小强」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+//原文链接：https://blog.csdn.net/weixin_40807247/article/details/91435275
+
     }
 }
 
@@ -154,6 +158,18 @@ class SingleLinkedList{
             //将temp后移，
             temp=temp.next;
         }
+    }
+    //如何实现链表的反转
+    public HeroNode ReverseIteratively(HeroNode head){
+        HeroNode pre = null;
+        HeroNode next = null;
+        while (head != null) {
+            next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
     }
 }
 

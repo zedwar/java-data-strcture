@@ -13,3 +13,4 @@
     3.当队列满时。条件是(rear+1)%maxSize = front[满的条件】
     4.当队列为空时，rear = front 空
     5.队列中有效的数据个数（rear+maxSize-front）%maxSize
+    
